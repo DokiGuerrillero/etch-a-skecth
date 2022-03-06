@@ -8,11 +8,25 @@
     <title>Etch-est-Sketch</title>
 </head>
 <body class="body">
-    <div id="bigBox"></div>   
-    <input id="bar" type="range" min="2" max="32" step="2"> <p></p>
-    <input type="color" onclick="" value="">
-    <input type="button" onclick="createGrid(bar.value)" value="Maker">
-    <input type="button" onclick="killGrid()" value="Killer">
+    <h1>Etch-A-Sketch</h1>
+    <div id="bigBox" ondragstart="return false;" ondrop="return false;"></div>
+    <div class="cont">
+        <div class="bottons">
+            <h2>Options</h2>
+            <input id="bar" type="range" min="2" max="32" step="2"> <p></p>
+            <input type="color" id="color1" value="#000000">
+            <input type="color" id="color2" value="#ffffff">
+            <input type="button" onclick="createGrid(bar.value)" value="Build Grid">
+            <input type="button" onclick="killGrid()" value="Erase Grid">
+            <input type="button" onclick="erasefun()" value="Change Color">
+            <input type="button" onclick="clean(barVal)" value="Clean">
+            <input type="button" onclick="rain()" value="Rainbow">
+        </div>
+    </div>
+    <footer class="footer">
+        <h3>Odin's Project</h3>
+        <p>Let's be honest, we all know what you are going to draw first... ;)</p>
+    </footer>   
 </body>
 <script type="text/javascript" src="./script.js"></script>
 </html>

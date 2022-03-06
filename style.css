@@ -1,12 +1,82 @@
+.body{
+    display: inline;
+    text-align: center;
+}
+.body>h1{
+    margin-top: 0px;
+}
+.cont{
+    display: inline;
+    position: fixed;
+    top: 21vh;
+    left: 0vw;
+    width: 250px;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: 5px solid;
+}
+.bottons{
+    margin: auto;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+.bottons> h2{
+    margin: 10px 0px;
+}
+.bottons> p{
+    margin: 0px;
+}
+.bottons> input:nth-child(2),.bottons> input:nth-child(3){
+    flex: 0 0 auto;
+    border: none;
+    color: blue;
+}
+.bottons> input:nth-child(4),.bottons> input:nth-child(5){
+    width: 100%;
+    margin-left: 25px;
+    background-color: white;
+    border: rgb(226, 233, 240) solid 2px;
+    border-radius: 10px;
+}
+.bottons> input:nth-child(4),.bottons> input:nth-child(5){
+    width: 100%;
+    margin-left: 25px;
+    background-color: white;
+    border: rgb(226, 233, 240) solid 2px;
+    border-radius: 10px;
+}
+
+.bottons> input:nth-child(6),.bottons> input:nth-child(7),.bottons> input:nth-child(8),.bottons> input:nth-child(9),.bottons> input:nth-child(10){
+    margin-left: 25px;
+    background-color: white;
+    border: rgb(0, 0, 0) solid 2px;
+    border-radius: 10px;
+
+}
+.bottons> input:nth-child(6):hover,.bottons> input:nth-child(7):hover,.bottons> input:nth-child(8):hover,.bottons> input:nth-child(9):hover,.bottons> input:nth-child(10):hover{
+    transition: all 0.2s;
+    background-color: white;
+    border: rgb(76, 131, 179) solid 2px;
+}
+
 #bigBox {
+    margin: 0 auto;
     width: 800px;
     height: 800px;
-    background-color: gray;
+    background-color: rgb(219, 216, 216);
     display: flex;
     flex: 0 0 auto;
     flex-wrap: wrap;
-    justify-content: space-around;
-    border: 2px solid black;
+    justify-content: center;
+    align-content: center;
+    border: 5px solid rgb(0, 0, 0);
 }
 
 .active{
@@ -17,8 +87,27 @@
 }
 .lilBox{
     background-color: rgb(255, 255, 255);
+    border: 0px;
 }
-.lilBox:hover {
-    background-color: black;
-    transition: all 0.2s linear;
+.lilBox:hover{
+    display: inline;
+    transition: 0.2s ease-in;
+    background-color: rgb(252, 249, 249);
+    scale: 0.95;
+}
+.footer{
+    position: fixed;
+    width: 100vw;
+    bottom: 0px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+.footer > h3 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.footer > p {
+    font-size: 12px;
+    margin: 2px;
 }
